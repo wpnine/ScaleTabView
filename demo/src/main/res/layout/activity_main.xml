@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayoutID"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        >
+
+        <!--<android.support.design.widget.CollapsingToolbarLayout-->
+        <!--android:id="@+id/collapsing_toolbar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--app:layout_scrollFlags="scroll|exitUntilCollapsed">-->
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:expandedTitleMarginEnd="64dp"
+            app:expandedTitleMarginStart="48dp"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            android:minHeight="56dp"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/titleLayout">
+
+                <!--</android.support.design.widget.CollapsingToolbarLayout>-->
+                <com.hungrytree.scaletab.ScaleTabLayout
+                    android:id="@+id/tabLayoutID"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    app:tab_DividerColor="@android:color/transparent"
+                    app:tab_IndicatorColor="#FFFFFF"
+                    app:tab_IndicatorHeight="6px"
+                    app:tab_TextColor="#cccccc"
+                    app:tab_TextSelectedColor="#FFFFFF"
+                    app:tab_UnderlineColor="#141517"
+                    app:tab_UnderlineHeight="2px"
+                    app:tab_normal_textSize="18sp"
+                    app:tab_select_textSize="38sp"
+                    android:layout_alignParentBottom="true"
+                    android:tag="tab"/>
+            </RelativeLayout>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPagerID"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior ="@string/appbar_scrolling_view_behavior"/>
+
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>

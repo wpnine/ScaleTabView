@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.kelina.test.VpSwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipe_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:tag="swipeRefreshLayout">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerViewId"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="20px"
+                android:layout_marginLeft="20px"
+                android:tag="recyclerView"/>
+
+</com.example.kelina.test.VpSwipeRefreshLayout>

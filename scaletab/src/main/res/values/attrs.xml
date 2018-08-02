@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ScaleTabLayout">
+        <attr name="tab_normal_textSize" format="dimension"/>
+        <attr name="tab_select_textSize" format="dimension"/>
+        <attr name="tab_IndicatorColor" format="color" />
+        <attr name="tab_UnderlineColor" format="color" />
+        <attr name="tab_DividerColor" format="color" />
+        <attr name="tab_IndicatorHeight" format="dimension" />
+        <attr name="tab_UnderlineHeight" format="dimension" />
+        <attr name="tab_TextSelectedColor" format="color"/>
+        <attr name="tab_TextColor" format="color"/>
+    </declare-styleable>
+</resources>
